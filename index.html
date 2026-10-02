@@ -187,10 +187,12 @@
         .final-msg-container.show-final { opacity: 1; pointer-events: auto; }
         .final-msg-container.show-final .final-msg-box { transform: scale(1) translateY(0); opacity: 1; }
 
+        /* ปรับขนาดรูป photo8 ให้แสดงผลขนาดเต็มตามต้นฉบับ */
         .final-photo {
-            width: 100%; max-height: 250px; object-fit: cover;
+            width: 100%; height: auto; object-fit: contain;
             border-radius: 12px; margin-bottom: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: block;
         }
 
         .final-msg-box p { font-size: 1rem; line-height: 1.6; color: #555; margin: 10px 0; }
